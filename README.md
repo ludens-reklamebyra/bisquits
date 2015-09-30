@@ -7,4 +7,13 @@ $ npm install --save https://github.com/ludens-reklamebyra/bisquits.git#v0.0.1
 ```javascript
 var bisquits = new Bisquits('cookies', 'cookie');
 bisquits.add('chocolate');
+
+// Becomes:
+{
+  cookies: [
+    {
+      cookie: 'chocolate'
+    }
+  ]
+}
 ```
