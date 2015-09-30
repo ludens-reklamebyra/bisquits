@@ -1,0 +1,26 @@
+{
+  "name": "bisquits",
+  "version": "0.0.1",
+  "description": "Add or remove a k,v in a cookie array.",
+  "main": "lib/Bisquits.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludens-reklamebyra/bisquits.git"
+  },
+  "keywords": [
+    "cookies"
+  ],
+  "author": "Stian Bakkane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludens-reklamebyra/bisquits/issues"
+  },
+  "homepage": "https://github.com/ludens-reklamebyra/bisquits#readme",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "js-cookie": "^2.0.3"
+  }
+}
