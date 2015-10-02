@@ -1,7 +1,7 @@
 # bisquits
 ## Install
 ```
-$ npm install --save https://github.com/ludens-reklamebyra/bisquits.git#v0.0.1
+$ npm install --save https://github.com/ludens-reklamebyra/bisquits.git#v0.0.2
 ```
 ## Use
 ```javascript
