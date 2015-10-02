@@ -1,6 +1,6 @@
 {
   "name": "bisquits",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Add or remove a k,v in a cookie array.",
   "main": "lib/Bisquits.js",
   "scripts": {
