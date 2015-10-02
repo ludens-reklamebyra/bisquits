@@ -4,7 +4,7 @@
 Add or remove a k,v in a cookie array.
 ## Install
 ```
-$ npm install --save https://github.com/ludens-reklamebyra/bisquits.git#v0.0.2
+$ npm install --save bisquits
 ```
 ## Use
 ```javascript
