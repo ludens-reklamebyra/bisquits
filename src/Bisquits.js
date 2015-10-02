@@ -1,10 +1,16 @@
+'use strict';
 const Cookies = require('js-cookie');
 
 class Bisquits {
   constructor(name, key) {
     this.name = name;
     this.key = key;
-    this.cookie = Cookies.getJSON(this.name) || [];
+    this.cookieHandler = Cookies;
+    this.cookie = this.loadCookie();
+  }
+
+  loadCookie() {
+    return this.cookieHandler.getJSON(this.name) || [];
   }
 
   add(value) {
@@ -15,7 +21,7 @@ class Bisquits {
     const cookieObj = {};
     cookieObj[this.key] = value;
     this.cookie.push(cookieObj);
-    Cookies.set(this.name, this.cookie);
+    this.cookieHandler.set(this.name, this.cookie);
     return this.cookie;
   }
 
@@ -25,14 +31,14 @@ class Bisquits {
     if (cursor === false) return false;
 
     this.cookie.splice(cursor, 1);
-    Cookies.set(this.name, this.cookie);
+    this.cookieHandler.set(this.name, this.cookie);
     return this.cookie;
   }
 
   removeAll() {
     this.cookie = [];
-    Cookies.remove(this.name);
-    return true
+    this.cookieHandler.remove(this.name);
+    return true;
   }
 
   hasValue(value) {
