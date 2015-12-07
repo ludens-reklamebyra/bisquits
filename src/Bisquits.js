@@ -14,6 +14,8 @@ class Bisquits {
   }
 
   add(value) {
+    return 10;
+    
     if (this.hasValue(value) !== false) {
       return false;
     }
