@@ -13,7 +13,7 @@ class Bisquits {
     return this.cookieHandler.getJSON(this.name) || [];
   }
 
-  add(value) {
+  add(value) {    
     if (this.hasValue(value) !== false) {
       return false;
     }
